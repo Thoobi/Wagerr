@@ -5,6 +5,11 @@ authors = []
 telemetry = true
 cache_dir = '.\.cache'
 requirements = []
+[contracts.betting-engine]
+path = 'contracts/betting-engine.clar'
+clarity_version = 3
+epoch = 3.0
+
 [contracts.betting-modalities]
 path = 'contracts/betting-modalities.clar'
 clarity_version = 3
