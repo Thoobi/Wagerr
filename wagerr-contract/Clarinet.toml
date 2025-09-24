@@ -1,36 +1,19 @@
 [project]
-name = 'wagerr-contract'
-description = ''
+name = "wagerr-contract"
 authors = []
+description = ""
 telemetry = true
-cache_dir = '.\.cache'
 requirements = []
-[contracts.WGR-Token]
-path = 'contracts/WGR-Token.clar'
-clarity_version = 3
-epoch = 3.0
+[contracts.token-burn]
+path = "contracts/token-burn.clar"
+depends_on = []
 
-[contracts.betting-engine]
-path = 'contracts/betting-engine.clar'
-clarity_version = 3
-epoch = 3.0
+[repl]
+costs_version = 2
+parser_version = 2
 
-[contracts.betting-modalities]
-path = 'contracts/betting-modalities.clar'
-clarity_version = 3
-epoch = 3.0
-
-[contracts.event-manager]
-path = 'contracts/event-manager.clar'
-clarity_version = 3
-epoch = 3.0
-
-[contracts.payment-processor]
-path = 'contracts/payment-processor.clar'
-clarity_version = 3
-epoch = 3.0
 [repl.analysis]
-passes = ['check_checker']
+passes = ["check_checker"]
 
 [repl.analysis.check_checker]
 strict = false
